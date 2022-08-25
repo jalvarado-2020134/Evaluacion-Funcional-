@@ -13,7 +13,7 @@ const ReporteCarrera = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/prueba/carreras/" + valores.carrera)
+      .get("https://concurso-poesia.herokuapp.com/prueba/carreras/" + valores.carrera)
       .then((res) => {
         setUsuarios(res.data.UsuariosCarrera);
         if (res.data.UsuariosCarrera.length === 0) {
@@ -32,7 +32,7 @@ const ReporteCarrera = () => {
     <>
       <Navbar />
       <br />
-      <Link className="nav-link" to="/">
+      <Link className="nav-link" to="/inicio">
       <button className="m-3 text-left btn btn-danger">
         Regresar
       </button>

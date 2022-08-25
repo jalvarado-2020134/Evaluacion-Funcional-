@@ -13,8 +13,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Inicio />} exact />
-          <Route path="/registro" element={<Registro />} exact />
+          <Route path="/inicio" element={<Inicio />} exact />
+          <Route path="/" element={<Registro />} exact />
           <Route path="/reportes" element={<Reporte />} exact />
           <Route
             path="/reportePoesia/:poesia"

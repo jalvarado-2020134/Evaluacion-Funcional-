@@ -5,14 +5,16 @@ const nuevos = require("./src/controllers/poesia.controller");
 mongoose.Promise = global.Promise;
 
 mongoose
-  .connect("mongodb://localhost:27017/Registro", {
+  .connect("mongodb+srv://jalvarado:admin@poesia.1iuakyo.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
     console.log("Connected to database");
 
-    app.listen(3000, function () {
+    let port = process.env.PORT || 3000
+
+    app.listen(port, function () {
       nuevos.crearGeneros();
       console.log("Running in port 3000.");
     });

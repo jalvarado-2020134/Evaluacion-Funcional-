@@ -37,12 +37,12 @@ const Registro = () => {
     };
     event.preventDefault();
     axios
-      .post("http://localhost:3000/prueba/registro", usuario)
+      .post("https://concurso-poesia.herokuapp.com/prueba/registro", usuario)
       .then((res) => {
         Swal.fire({
           icon: "success",
           title: "Te has registrado exitosamente",
-        }).then(navigate("/"));
+        }).then(navigate("/inicio"));
       })
       .catch((error) => {
         console.log(error);
@@ -151,7 +151,7 @@ const Registro = () => {
                   <option selected disabled hidden value={""}>
                     Selecciona tu poesia
                   </option>
-                  {/*          <button>Crear nuevo genero</button> */}
+                  {}
                   {poesias.map((p) => (
                     <option key={p._id} value={p._id}>
                       {p.nombre}

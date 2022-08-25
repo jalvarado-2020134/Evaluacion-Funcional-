@@ -10,7 +10,7 @@ const Reporte = () => {
   const [usuarios, setUsuarios] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/prueba/edades")
+      .get("https://concurso-poesia.herokuapp.com/prueba/edades")
       .then((res) => {
         setUsuarios(res.data.UsuariosEdad);
         if (res.data.UsuariosEdad.length === 0) {
@@ -28,7 +28,7 @@ const Reporte = () => {
     <>
       <Navbar />
       <br />
-      <Link className="nav-link" to="/">
+      <Link className="nav-link" to="/inicio">
       <button className="m-3 text-left btn btn-danger">
         Regresar
       </button>

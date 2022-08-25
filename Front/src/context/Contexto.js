@@ -8,7 +8,7 @@ export const Contexto = ({ children }) => {
   const [poesias, setPoesias] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/prueba/verGeneros")
+      .get("https://concurso-poesia.herokuapp.com/prueba/verGeneros")
       .then((res) => {
         setPoesias(res.data.Generos);
       })

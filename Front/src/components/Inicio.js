@@ -36,7 +36,7 @@ const Inicio = () => {
               <div className="text-white">
                 <h1 className="mb-4">Concurso de poesia</h1><br></br>
                 <h2 className="mb-4 text-secondary">La Universidad de Guatemala tendrá un evento de poesia y se ha invitado a todos los jóvenes estudiantes a participar.</h2><br></br>
-                <h4 className="mb-4">Ver a los usuarios registrados</h4>
+                <h4 className="mb-4">Ver usuarios registrados</h4>
                 <div className="btn-group">
                   
                   <button
@@ -45,7 +45,7 @@ const Inicio = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Ver reportes
+                    Ver Tablas
                   </button>
                   
                   <ul className="dropdown-menu">

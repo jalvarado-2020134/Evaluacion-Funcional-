@@ -14,7 +14,7 @@ const ReportePoesia = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/prueba/poesia/" + valores.poesia)
+      .get("https://concurso-poesia.herokuapp.com/prueba/poesia/" + valores.poesia)
       .then((res) => {
         setUsuarios(res.data.UsuariosPoesia);
         console.log(valores.poesia)
@@ -34,7 +34,7 @@ const ReportePoesia = () => {
     <>
     <Navbar/>
       <br />
-      <Link className="nav-link" to="/">
+      <Link className="nav-link" to="/inicio">
       <button className="m-3 text-left btn btn-danger">
         Regresar
       </button>

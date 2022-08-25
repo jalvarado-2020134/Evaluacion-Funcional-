@@ -23,8 +23,8 @@ const Navbar = () => {
               <ul className="navbar-nav mx-auto">
               
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
-                    <h3>Inicio</h3>
+                  <Link className="nav-link" to="/inicio">
+                    <h3>Tablas de Registro</h3>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -32,7 +32,7 @@ const Navbar = () => {
                     <h3>Universidad de Guatemala</h3>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/registro">
+                  <Link className="nav-link" to="/">
                   <h3>Formulario de Registro</h3>
                   </Link>
                 </li>
